@@ -5,9 +5,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet">
     </head>
 
-    <body>
+    <body class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <main>
+            <div class="counter">
+                <h2 id="player">Player: 0</h2>
+                <h2 id="computer">Computer: 0</h2>
+            </div>
+            <div class="imgs" id="over">
+                <a href="#" id="rock"><img src="rock.png" alt="rock"></a>
+                <a href="#" id="paper"><img src="paper.png" alt="paper"></a>
+                <a href="#" id="scissors"><img src="scissors.png" alt="scissors"></a>
+            </div>
+            <div class="msgs">
+                <p id="msg_1">The player who gets 5 points wins.</p>
+                <p id="msg_2">Please click your option!</p>
+                <button id="again" class="show_button">Wanna play again? Click here!</button>
+            </div>
+        </main>
+        </div>
         <script src="script.js"></script>
     </body>
 
